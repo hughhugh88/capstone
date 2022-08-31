@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: bestcars
     routes:
-      - route: $HOST.$DOMAIN
+      - route: bliu.us-east.mybluemix.net
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: bestcars-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: bliu.apic.us-east.mybluemix.net/static
     memory: 128M
     buildpack: staticfile_buildpack
